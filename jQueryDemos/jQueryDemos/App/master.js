@@ -3,15 +3,15 @@
     document.getElementById('increase').addEventListener('click', function () {
         try {
             var element = document.getElementById('txtValue');
+            element.value = parseInt(element.value) + 1;
         }
         catch (e) {
             alert(e.message);
         }
-        element.value = parseInt(element.value) + 1;
     });
     document.getElementById('decrease').addEventListener('click', function () {
-        var element = document.getElementById('txtValue');
         try {
+            var element = document.getElementById('txtValue');
             element.value = parseInt(element.value) - 1;
         }
         catch (e) {
