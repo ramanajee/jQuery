@@ -1,12 +1,23 @@
 ﻿var Test = Test || {};
 (function (Test) {
     document.getElementById('increase').addEventListener('click', function () {
-        var element = document.getElementById('txtValue');
+        try {
+            var element = document.getElementById('txtValue');
+        }
+        catch (e) {
+            alert(e.message);
+        }
         element.value = parseInt(element.value) + 1;
     });
     document.getElementById('decrease').addEventListener('click', function () {
         var element = document.getElementById('txtValue');
-        element.value = parseInt(element.value) - 1;
+        try {
+            element.value = parseInt(element.value) - 1;
+        }
+        catch (e) {
+            alert(e.message);
+        }
+
     });
 
     document.getElementById('colorBox').addEventListener('click', function () {
