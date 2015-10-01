@@ -2,13 +2,29 @@
 
 
 $(document).ready(function() {
-    alert('ready method executed')
+    window.userName = '';
+    window.password = '';
 })
 
-$(window).load(function() {
-    alert('windows.load method executed');
+$(window).load(function () {
+    alert('user name is ' + window.userName + ' ::::: ' + 'password: ' + window.password);
 });
 
 $('#iframe').load(function () {
-    alert('iframe.load metghod executed')
+    window.userName = ' Ramanajee';
+    window.password = ' yourpasswordisincorrect';
 });
+
+$('#content').load("https://desktop.github.com/");
+
+
+(function ($) {
+    var number = $('txtValue').val();
+    console.log(number);
+    $('#increase').click(function() {
+        $('#txtValue').val( number + 1);
+    });
+    $('#decrease').click(function () {
+        $('#txtValue').val(number - 1);
+    });
+})(jQuery);

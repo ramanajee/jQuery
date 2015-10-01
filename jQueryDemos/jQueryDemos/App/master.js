@@ -17,7 +17,6 @@
         catch (e) {
             alert(e.message);
         }
-
     });
 
     document.getElementById('colorBox').addEventListener('click', function () {
