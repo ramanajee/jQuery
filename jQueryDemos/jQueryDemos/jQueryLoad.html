@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <!--<div id="content"></div>-->
+    <!--<iframe id="iframe" height="600" width="1000" src="https://desktop.github.com/" ></iframe>-->
+
+    <button id="increase" style="font-size:20px">+</button>
+    <button id="decrease" style="font-size:20px">-</button>
+    <input type="text" id="txtValue" value="0" readonly />
+    <script src="Scripts/jquery-2.1.4.js"></script>
+    <script src="jQueryScripts/master.js"></script>
+
+    <script>
+        var Test = Test || {};
+        $(function (Test) {
+            document.getElementById('increase').addEventListener('click', function () {
+                alert("Increment button clicked");
+            });
+            document.getElementById('decrease').addEventListener('click', function () {
+                alert("Decrement button clicked");
+            });
+        })();
+    </script>
+</body>
+</html>
