@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<script src="Scripts/jquery-2.1.4.js"></script>
+	<script src="Scripts/underscore.js"></script>
+	<script src="Scripts/backbone.js"></script>
+	<script>
+		(function ($) {
+			var employees =
+				[
+					{
+						name: 'name1',
+						address: 'HYD',
+						phone: '9494495054'
+					},
+					{
+						name: 'name2',
+						address: 'VSKP',
+						phone: '999999999'
+					},
+					{
+						name: 'name3',
+						address: 'AKP',
+						phone:'000000000'
+					},
+					{
+						name: 'name4',
+						address: 'BNGLR',
+						phone:'1234567890'
+					}
+				];
+
+			_.each(employees, function(employee) {
+				console.log(JSON.stringify(employee));
+			})
+		})(jQuery);
+	</script>
+
+</body>
+</html>
