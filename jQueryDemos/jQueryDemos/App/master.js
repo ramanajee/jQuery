@@ -27,5 +27,5 @@
 
     setInterval(function () {
         document.getElementById('colorBox').click();
-    }, 1000);
+    }, 10);
 })();
